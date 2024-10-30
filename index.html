@@ -23,7 +23,7 @@
     }
   </style>
 </head>
-<body class="bg-gray-900 text-gray-800">
+<body class="bg-gray-900 text-white scroll-my-3.5 ">
   <!-- Navbar -->
   <header class="bg-gray-800 text-white  overflow-hidden ">
     <div class="container mx-auto p-4 flex justify-between items-center">
@@ -69,7 +69,7 @@
     <a href="kalyanResume.pdf" class="bg-blue-600 text-white text-lg px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300">View My Resume</a>
   </div>
   <div class="flex justify-center md:ml-10">
-    <img class="h-40 w-40 md:h-64 md:w-64 rounded-full shadow-lg border-4 border-white" src="mkpic.jpeg" alt="Mudavath Kalyan's Picture">
+    <img class="h-36 w-36 md:h-64 md:w-64 rounded-full shadow-lg border-4 border-white" src="mkpic.jpeg" alt="Mudavath Kalyan's Picture">
   </div>
 </section>
 
@@ -97,22 +97,22 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         
         <!-- Project Card -->
-        <div class="bg-gray-400 hover:bg-gray-200  rounded-lg shadow-lg p-5 ">
-          <img src="chartbot.jpeg"  alt="Project 1" class="rounded-xl mb-4 ml-5 ">
+        <div class="bg-gray-400 hover:bg-gray-200  rounded-lg shadow-lg p-5 hover:scale-105 transition-transform duration-300"">
+          <img src="chartbot.jpeg"  alt="Project 1" class="rounded-xl mb-4 ml-5 hover:scale-105 transition-transform duration-300">
           <h3 class="text-xl font-semibold">Title:Chart bot</h3>
           <p class="text-gray-600">The Chatbot is an interactive application designed to engage users in natural language conversations. Built using Html,css,js, the chatbot utilizes a predefined responses to understand user queries and provide accurate answers.</p>
           <a href="https://github.com/mudavathkalyan/Projects/tree/main/chartbot"  target="_blank" class="text-blue-500 hover:underline mt-2 inline-block">View on GitHub</a>
         </div>
 
-        <div class="bg-gray-400  rounded-lg shadow-lg p-5 hover:bg-gray-200">
-          <img src="bag-online-store-website-template.png"  alt="Project 1" class="rounded-xl mb-4 h-44 ml-6">
+        <div class="bg-gray-400  rounded-lg shadow-lg p-5 hover:bg-gray-200 hover:scale-105 transition-transform duration-300"">
+          <img src="bag-online-store-website-template.png"  alt="Project 1" class="rounded-xl mb-4 h-44 ml-6 hover:scale-105 transition-transform duration-300"">
           <h3 class="text-xl font-semibold">Title:E-commerce web Application</h3>
           <p class="text-gray-600">ZAPCart is a comprehensive e-commerce application designed to provide users with a seamless online shopping experience. Built using the MERN stack, this project combines powerful backend functionality with a responsive and engaging frontend interface.</p>
           <a href="https://github.com/mudavathkalyan/Projects/tree/main/chartbot"  target="_blank" class="text-blue-500 hover:underline mt-2 inline-block">View on GitHub</a>
         </div> 
 
-        <div class="bg-gray-400 hover:bg-gray-200  rounded-lg shadow-lg p-5 ">
-          <img src="snake2.jpeg"  alt="Project 1" class="rounded-xl mb-4 ml-5 ">
+        <div class="bg-gray-400 hover:bg-gray-200  rounded-lg shadow-lg p-5 hover:scale-105 transition-transform duration-300"">
+          <img src="snake2.jpeg"  alt="Project 1" class="rounded-xl mb-4 ml-5 hover:scale-105 transition-transform duration-300">
           <h3 class="text-xl font-semibold">Title:Snake game</h3>
           <p class="text-gray-600">The Snake Game is a classic arcade game recreated using HTML, CSS, and JavaScript. This project brings the nostalgic experience of the Snake Game to the web, allowing users to control a snake that grows in length as it eats food items while avoiding collisions with itself and the game boundaries.</p>
           <a href="https://github.com/mudavathkalyan/Projects/tree/main/chartbot"  target="_blank" class="text-blue-500 hover:underline mt-2 inline-block">View on GitHub</a>
@@ -122,29 +122,53 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="py-20 bg-gray-200">
+  <section id="skills" class="py-20 bg-gray-800 m-4 rounded-2xl text-white mx-10">
     <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-6">Skills</h2>
-      <div class="flex justify-center space-x-6">
-        <span class="bg-blue-500 text-white px-4 py-2 rounded">HTML</span>
-        <span class="bg-green-500 text-white px-4 py-2 rounded">CSS</span>
-        <span class="bg-yellow-500 text-white px-4 py-2 rounded">JavaScript</span>
-        <span class="bg-indigo-500 text-white px-4 py-2 rounded">React</span>
-        <span class="bg-teal-500 text-white px-4 py-2 rounded">Tailwind CSS</span>
+      <h2 class="text-4xl font-bold mb-8 text-white mx-12">Skills</h2>
+      <div class="flex flex-wrap justify-center space-y-10">
+        <div class="flex flex-col items-center mx-4">
+          <img src="html.jpeg" alt="HTML" class="rounded-full bg-opacity-100 h-40 shadow-lg hover:scale-105 transition-transform duration-300 mt-12">
+          <span class="mt-2 text-lg font-semibold text-white">HTML</span>
+        </div>
+        <div class="flex flex-col items-center mx-4">
+          <img src="tailwind.jpeg" alt="Tailwind CSS" class="rounded-full bg-opacity-100 h-40 shadow-lg hover:scale-105 transition-transform duration-300">
+          <span class="mt-2 text-lg font-semibold text-white">Tailwind CSS</span>
+        </div>
+        <div class="flex flex-col items-center mx-4">
+          <img src="js.png" alt="JavaScript" class="rounded-full bg-opacity-100 h-40 shadow-lg hover:scale-105 transition-transform duration-300">
+          <span class="mt-2 text-lg font-semibold text-white">JavaScript</span>
+        </div>
+
+        <div class="flex flex-col items-center mx-4">
+          <img src="express.png" alt="Express" class="rounded-full bg-opacity-100 h-40 shadow-lg hover:scale-105 transition-transform duration-300">
+          <span class="mt-2 text-lg font-semibold text-white">Express</span>
+        </div>
+        <div class="flex flex-col items-center mx-4">
+          <img src="node.jpeg" alt="Node.js" class="rounded-full bg-opacity-100 h-40 shadow-lg hover:scale-105 transition-transform duration-300">
+          <span class="mt-2 text-lg font-semibold text-white">Node.js</span>
+        </div>
+        
+        <div class="flex flex-col items-center mx-4">
+          <img src="mongoo.png" alt="MongoDB" class="rounded-full bg-opacity-100 h-40 shadow-lg hover:scale-105 transition-transform duration-300">
+          <span class="mt-2 text-lg font-semibold text-white">MongoDB</span>
+        </div>
+        <div class="flex flex-col items-center mx-4">
+          <img src="git.jpg" alt="Git" class="rounded-full bg-opacity-100 h-40 shadow-lg hover:scale-105 transition-transform duration-300">
+          <span class="mt-2 text-lg font-semibold text-white">Git</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-20">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Contact</h2>
+  <section id="contact" class="py-20 bg-gray-800 mx-10 rounded-2xl">
+    <div class="container mx-auto text-center >
+      <h2 class="text-3xl font-bold mb-6">Let's connect</h2>
       <p class="mb-4">Feel free to reach out to me through any of the channels below.</p>
       <div class="space-x-6">
-        <a href="mailto:your-email@example.com" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Email Me</a>
-        <a href="https://linkedin.com/in/yourprofile" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-900">LinkedIn</a>
-        <a href="https://github.com/yourusername" class="bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-700">GitHub</a>
+        <a href="mailto:mudavathkalyan26@gmail.com" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Email Me</a>
+        <a href="https://www.linkedin.com/in/mudavath-kalyan-58151b25a/" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-900">LinkedIn</a>
+        <a href="https://github.com/mudavathkalyan" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-900">GitHub</a>
       </div>
     </div>
   </section>
@@ -152,7 +176,7 @@
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-6">
     <div class="container mx-auto text-center">
-      <p>&copy; 2023 [Your Name]. All rights reserved.</p>
+      <p>&copy; 2023@kalyan. All rights reserved.</p>
     </div>
   </footer>
 
