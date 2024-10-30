@@ -5,11 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-blue-950 text-gray-800">
+  <style>
+    @media (max-width: 420px) {
+      #navcontent {
+        width: 100% !important;
 
+        /* Forces full width */
+      }
+      #cross
+      {
+        margin-left:35vw;
+      }
+      #barname
+      {
+        padding-left:20vw;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-800">
   <!-- Navbar -->
-  <header class="bg-blue-900 text-white">
+  <header class="bg-gray-800 text-white  overflow-hidden ">
     <div class="container mx-auto p-4 flex justify-between items-center">
       <h2 class="text-3xl font-medium ">Portfolio</h2>
       <nav class="space-x-4">
@@ -19,17 +35,25 @@
         <a href="#skills" class="hover:text-gray-400 text-xl">Skills</a>
         <a href="#contact" class="hover:text-gray-400 text-xl">Contact</a>
         </div>
-        <div  id="bar" class="md:hidden block" ><a class="text-3xl" href="#">&#8801</a></div>
+        <div   class="navbarsec md:hidden block" ><a class="text-3xl" href="#">&#8801</a></div>
     </nav>
 </div>
-<div id="navcontent" class="md:justify-evenly space-x-6 md:hidden flex flex-col text-center">
-    <a href="#about" class="hover:text-gray-400 text-xl block  pl-2">About</a>
-    <a href="#projects" class="hover:text-gray-400 text-xl block  pl-2">Projects</a>
-    <a href="#skills" class="hover:text-gray-400 text-xl block  p-2">Skills</a>
-    <a href="#contact" class="hover:text-gray-400 text-xl blockp-2">Contact</a>
+
+</header>
+
+<div class="fixed overflow-hidden">
+  <div id="navcontent" class="md:justify-evenly md:hidden hidden space-x-6  flex-col border-2 border-gray-600 border-s-orange-50 w-80 h-[27rem] bg-gray-800 fixed z-10 top-[53px] right-0 mt-4 mr-4 rounded-lg overflow-hidden">
+    <div  id="barname" class=" hover:text-gray-300  font-bold text-white text-2xl  block p-5 bg-gray-900">Portfolio
+      <span id="cross"  class="navbarsec ml-36 cursor-pointer">X</span>
+    </div>
+    <a href="#home"    class=" hover:text-gray-400  text-white text-xl block my-5">Home</a>
+    <a href="#about"    class=" hover:text-gray-400  text-white text-xl block my-5">About</a>
+    <a href="#projects" class=" hover:text-gray-400  text-white text-xl block my-5">Projects</a>
+    <a href="#skills"   class=" hover:text-gray-400  text-white text-xl block my-5 ">Skills</a>
+    <a href="#contact"  class=" hover:text-gray-400  text-white text-xl block my-5">Contact</a>
+</div>
 </div>
 
-  </header>
 
   <!-- Home Section -->
   <section class="flex items-center justify-center min-h-screen bg-cover bg-center" style="background-image: url('background.jpg');">
@@ -103,11 +127,16 @@
   </footer>
 
     <script>
-        let nav=document.getElementById("navcontent");
-        let bar=document.getElementById("bar");
-        bar.addEventListener('click', () => {
-       nav.classList.toggle('hidden');
-     });
+       const nav = document.getElementById("navcontent");
+const bars = document.querySelectorAll(".navbarsec");
+
+bars.forEach(bar => {
+  bar.addEventListener("click", () => {
+    nav.classList.toggle("hidden");
+    
+  });
+});
+
     </script>
 
 </body>
