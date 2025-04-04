@@ -31,7 +31,7 @@
       <nav class="space-x-4">
         <div class="md:flex md:justify-evenly space-x-6 hidden">
         <a href="#about" class="hover:text-gray-400 text-xl">About</a>
-        <a href="#about" class="hover:text-gray-400 text-xl">Projects</a>
+        <a href="#projects" class="hover:text-gray-400 text-xl">Projects</a>
         <a href="#skills" class="hover:text-gray-400 text-xl">Skills</a>
         <a href="#contact" class="hover:text-gray-400 text-xl">Contact</a>
         </div>
@@ -74,21 +74,20 @@
 </section>
 
 
-  <!-- About Section -->
-  <section id="about" class="py-10  ">
-    <div class="container mx-auto min-h-[50vh] bg-gray-800 p-10 rounded-2xl">
-      <h3 class="text-4xl font-bold  mb-6 text-white ml-11 mt-5">About Me</h3>
-      <p class=" m-6  text-white text-[16px] md:text-[20px]  mb-6 ml-12 text-justify">
-        I’m Mudavath Kalyan, a passionate and dedicated MERN stack developer with a strong commitment to building seamless, high-performing applications. 
-        With a background in full-stack development, I specialize in creating dynamic and user-centered applications using MongoDB, Express, React, and Node.js.
-      <br>
-        I have extensive experience in end-to-end web application development, from database design and backend API creation to front-end UI and UX. 
-        My work focuses on delivering applications that are functional, scalable, accessible, and optimized for performance. 
-        Every project I build is a new opportunity to innovate, solve problems, and refine my skills.
-      </p>
-    </div>
-  </section>
-  
+<!-- About Section -->
+<section id="about" class="py-10">
+  <div class="container mx-auto min-h-[50vh] bg-gray-800 p-10 rounded-2xl">
+    <h3 class="text-4xl font-bold mb-6 text-white ml-11 mt-5">About Me</h3>
+    <p class="m-6 text-white text-[16px] md:text-[20px] mb-6 ml-12 text-justify">
+      I’m Mudavath Kalyan, a full-stack developer with a passion for crafting smart, scalable, and AI-integrated web applications. With a strong foundation in the MERN stack (MongoDB, Express, React, Node.js), I’ve expanded my expertise into cutting-edge technologies like Next.js 15, Prisma, NeonDB, and Google’s Gemini API.
+      <br><br>
+      My latest venture, <strong>ProPathAI</strong>, is an AI-powered career guidance platform offering personalized resume reviews, mock interviews, and tailored learning roadmaps. I thrive on building projects that solve real-world problems and improve user experiences.
+      <br><br>
+      Whether it's building robust backends, designing intuitive frontends, or integrating AI to create smarter systems — I'm all in. I’m constantly learning, building, and pushing the limits of what’s possible with modern web technologies.
+    </p>
+  </div>
+</section>
+
 
   <!-- Projects Section -->
   <section id="projects" class=" py-10 ">
@@ -97,6 +96,17 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         
         <!-- Project Card -->
+
+        <div class="bg-purple-400 hover:bg-purple-200 rounded-lg shadow-lg p-5 hover:scale-105 transition-transform duration-300">
+          <img src="propath.jpeg" alt="ProPathAI Project" class="rounded-xl mb-4  hover:scale-105 transition-transform duration-300">
+          <h3 class="text-xl font-semibold text-black">Title: ProPathAI</h3>
+          <p class="text-gray-600">
+            ProPathAI is an AI-powered career guidance platform built with Next.js 15, React 19, Tailwind CSS, Prisma, NeonDB, and Gemini API. It features personalized resume reviews, AI mock interviews, career roadmaps, and a chatbot mentor to support users in achieving their career goals.
+          </p>
+          <a href="https://github.com/mudavathkalyan/ProPath_AI" target="_blank" class="text-blue-500 hover:underline mt-2 inline-block">View on GitHub</a>
+          <a href="https://propathai.vercel.app" target="_blank" class="text-black hover:underline mt-2 inline-block ml-[8vw]">View Demo</a>
+        </div>
+        
 
         <div class="bg-blue-400 hover:bg-blue-200 rounded-lg shadow-lg p-5 hover:scale-105 transition-transform duration-300">
           <img src="chat.png" alt="Chat Application Project" class="rounded-xl mb-4 ml-5 hover:scale-105 transition-transform duration-300">
@@ -143,43 +153,90 @@
     </div>
   </section>
 
-  <section id="skills" class="py-20 bg-gray-800 m-4 rounded-2xl text-white mx-10">
-    <div class="container mx-auto">
-      <h2 class="text-4xl font-bold mb-8 text-white mx-12">Skills</h2>
-      <div class="flex flex-wrap justify-center space-y-10">
-        <div class="flex flex-col items-center mx-4">
-          <img src="html.jpeg" alt="HTML" class="rounded-full bg-opacity-100 h-40 shadow-lg hover:scale-105 transition-transform duration-300 mt-12">
-          <span class="mt-2 text-lg font-semibold text-white">HTML</span>
-        </div>
-        <div class="flex flex-col items-center mx-4">
-          <img src="tailwind.jpeg" alt="Tailwind CSS" class="rounded-full bg-opacity-100 h-40 shadow-lg hover:scale-105 transition-transform duration-300">
-          <span class="mt-2 text-lg font-semibold text-white">Tailwind CSS</span>
-        </div>
-        <div class="flex flex-col items-center mx-4">
-          <img src="js.png" alt="JavaScript" class="rounded-full bg-opacity-100 h-40 shadow-lg hover:scale-105 transition-transform duration-300">
-          <span class="mt-2 text-lg font-semibold text-white">JavaScript</span>
-        </div>
 
-        <div class="flex flex-col items-center mx-4">
-          <img src="express.png" alt="Express" class="rounded-full bg-opacity-100 h-40 shadow-lg hover:scale-105 transition-transform duration-300">
-          <span class="mt-2 text-lg font-semibold text-white">Express</span>
-        </div>
-        <div class="flex flex-col items-center mx-4">
-          <img src="node.jpeg" alt="Node.js" class="rounded-full bg-opacity-100 h-40 shadow-lg hover:scale-105 transition-transform duration-300">
-          <span class="mt-2 text-lg font-semibold text-white">Node.js</span>
-        </div>
-        
-        <div class="flex flex-col items-center mx-4">
-          <img src="mongoo.png" alt="MongoDB" class="rounded-full bg-opacity-100 h-40 shadow-lg hover:scale-105 transition-transform duration-300">
-          <span class="mt-2 text-lg font-semibold text-white">MongoDB</span>
-        </div>
-        <div class="flex flex-col items-center mx-4">
-          <img src="git.jpg" alt="Git" class="rounded-full bg-opacity-100 h-40 shadow-lg hover:scale-105 transition-transform duration-300">
-          <span class="mt-2 text-lg font-semibold text-white">Git</span>
-        </div>
+
+
+ <section id="skills" class="py-20 bg-gray-800 m-4 rounded-2xl text-white mx-10">
+  <div class="container mx-auto">
+    <h2 class="text-4xl font-bold mb-8 text-white mx-12">Skills</h2>
+    <div class="flex flex-wrap justify-center gap-10">
+      
+      <!-- HTML -->
+      <div class="flex flex-col items-center mx-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML" class="rounded-full h-32 shadow-lg hover:scale-105 transition-transform duration-300">
+        <span class="mt-2 text-lg font-semibold">HTML</span>
       </div>
+
+      <!-- Tailwind CSS -->
+      <div class="flex flex-col items-center mx-4">
+        <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS" class="rounded-full h-32 shadow-lg hover:scale-105 transition-transform duration-300 bg-white p-2">
+        <span class="mt-2 text-lg font-semibold">Tailwind CSS</span>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="flex flex-col items-center mx-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="rounded-full h-32 shadow-lg hover:scale-105 transition-transform duration-300">
+        <span class="mt-2 text-lg font-semibold">JavaScript</span>
+      </div>
+
+      <!-- React -->
+      <div class="flex flex-col items-center mx-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="rounded-full h-32 shadow-lg hover:scale-105 transition-transform duration-300 bg-white p-2">
+        <span class="mt-2 text-lg font-semibold">React</span>
+      </div>
+
+      <!-- Next.js -->
+      <div class="flex flex-col items-center mx-4">
+        <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="Next.js" class="rounded-full h-32 shadow-lg hover:scale-105 transition-transform duration-300 bg-white p-2">
+        <span class="mt-2 text-lg font-semibold">Next.js</span>
+      </div>
+
+      <!-- Node.js -->
+      <div class="flex flex-col items-center mx-4">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png" alt="Node.js" class="rounded-full h-32 shadow-lg hover:scale-105 transition-transform duration-300">
+        <span class="mt-2 text-lg font-semibold">Node.js</span>
+      </div>
+
+      <!-- Express -->
+      <div class="flex flex-col items-center mx-4">
+        <img src="express.png" alt="Express.js" class="rounded-full h-32 shadow-lg hover:scale-105 transition-transform duration-300 bg-white p-2">
+        <span class="mt-2 text-lg font-semibold">Express</span>
+      </div>
+
+      <!-- MongoDB -->
+      <div class="flex flex-col items-center mx-4">
+        <img src="https://www.svgrepo.com/show/331488/mongodb.svg" alt="MongoDB" class="rounded-full h-32 shadow-lg hover:scale-105 transition-transform duration-300">
+        <span class="mt-2 text-lg font-semibold">MongoDB</span>
+      </div>
+
+      <!-- SQL -->
+      <div class="flex flex-col items-center mx-4">
+        <img src="https://www.svgrepo.com/show/331760/sql-database-generic.svg" alt="SQL" class="rounded-full h-32 shadow-lg hover:scale-105 transition-transform duration-300 bg-white p-2">
+        <span class="mt-2 text-lg font-semibold">SQL</span>
+      </div>
+
+      <!-- Java -->
+      <div class="flex flex-col items-center mx-4">
+        <img src="https://cdn.worldvectorlogo.com/logos/java-4.svg" alt="Java" class="rounded-full h-32 shadow-lg hover:scale-105 transition-transform duration-300">
+        <span class="mt-2 text-lg font-semibold">Java</span>
+      </div>
+
+      <!-- Python -->
+      <div class="flex flex-col items-center mx-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" class="rounded-full h-32 shadow-lg hover:scale-105 transition-transform duration-300">
+        <span class="mt-2 text-lg font-semibold">Python</span>
+      </div>
+
+      <!-- Git -->
+      <div class="flex flex-col items-center mx-4">
+        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" class="rounded-full h-32 shadow-lg hover:scale-105 transition-transform duration-300">
+        <span class="mt-2 text-lg font-semibold">Git</span>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Contact Section -->
   <section id="contact" class="py-20 bg-gray-800 mx-10 rounded-2xl">
@@ -188,7 +245,7 @@
       <p class="mb-4">Feel free to reach out to me through any of the channels below.</p>
       <div class="space-x-6">
         <a href="mailto:mudavathkalyan26@gmail.com" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Email Me</a>
-        <a href="https://www.linkedin.com/in/mudavath-kalyan-58151b25a/" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-900">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/kalyan-mudavath-58151b25a/" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-900">LinkedIn</a>
         <a href="https://github.com/mudavathkalyan" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-900">GitHub</a>
       </div>
     </div>
